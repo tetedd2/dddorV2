@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ระบบ AI ของฉัน</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .button-container-top {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn-top {
+      background-color: orange;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      width: 200px;
+      text-decoration: none;
+    }
+
+    .btn-top:nth-child(1) {
+      background-color: purple; /* เปลี่ยนเป็นปุ่มแรกแทนที่ของเดิม */
+    }
+
+    .btn-top:nth-child(2) {
+      background-color: green;
+    }
+
+    .btn-top:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-top:active {
+      transform: scale(0.98);
+    }
+
+    /* ปุ่มแนวนอนด้านล่าง */
+    .button-container-bottom {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 50px;
+    }
+
+    .btn-bottom {
+      background-color: white;
+      color: #333;
+      padding: 16px 24px;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      flex: 1;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-bottom:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-bottom:active {
+      transform: scale(0.98);
+    }
+
+    .btn-bottom.home {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .btn-bottom.ai {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    .btn-bottom.plant {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn-bottom.menu {
+      background-color: #ff9900;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ข้อความหัวเรื่อง -->
+  <h1>กรุณาเลือกระบบ AI ที่ต้องการใช้งาน</h1>
+
+  <!-- กล่องปุ่มบน (แนวตั้ง) - ลบปุ่ม Durian ออกแล้ว -->
+  <div class="button-container-top">
+    <a href="menu1.html" class="btn-top">บัญชี</a>
+    <a href="menu2.html" class="btn-top">คู่มือ</a>
+  </div>
+
+  <!-- กล่องปุ่มล่าง (แนวนอน) -->
+  <div class="button-container-bottom">
+    <a href="Home999.html" class="btn-bottom home">HOME</a>
+    <a href="Home.html" class="btn-bottom ai">AI</a>
+    <a href="Home555.html" class="btn-bottom plant">วิธีปลูก</a>
+    <a href="menu.html" class="btn-bottom menu">MENU</a>
+  </div>
+
+</body>
+</html>
